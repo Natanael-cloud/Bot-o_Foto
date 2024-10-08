@@ -28,6 +28,9 @@ captureBtn.addEventListener('click', () => {
     photo.src = imageUrl;
     photo.style.display = 'block';
 
+    // Chamar função para baixar a imagem
+    downloadImage(imageUrl);
+
 
 
 });
