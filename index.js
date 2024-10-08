@@ -1,0 +1,1 @@
+const captureBtn = document.getElementById('captureBtn');
