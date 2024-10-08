@@ -24,6 +24,10 @@ captureBtn.addEventListener('click', () => {
     // Converter para URL de imagem
     const imageUrl = canvas.toDataURL('image/png');
 
+    // Exibir a imagem capturada no elemento <img>
+    photo.src = imageUrl;
+    photo.style.display = 'block';
+
 
 
 });
