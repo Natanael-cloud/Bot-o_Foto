@@ -11,3 +11,13 @@ navigator.mediaDevices.getUserMedia({ video: true })
     .catch(err => {
         console.error("Erro ao acessar a câmera: ", err);
     });
+
+// Capturar a imagem quando o botão for clicado
+captureBtn.addEventListener('click', () => {
+    const context = canvas.getContext('2d');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+
+
+});
