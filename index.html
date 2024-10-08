@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Título da página que descreve a funcionalidade de captura de imagem -->
     <h1>Captura de Imagem do Usuário</h1>
-    <button id="captureBtn">Aperte aqui</button>
-    <video id="video" width="640" height="480" autoplay></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
-    <img id="photo" alt="Foto capturada" />
-    
 
+    <!-- Botão que o usuário clica para capturar a imagem da câmera -->
+    <button id="captureBtn">Aperte aqui</button>
+
+    <!-- Vídeo ao vivo da câmera do usuário. A imagem da câmera será exibida aqui. 
+         Largura e altura definidas para 640x480 pixels. O autoplay inicia o vídeo automaticamente -->
+    <video id="video" width="640" height="480" autoplay></video>
+
+    <!-- Canvas, que é uma área de desenho onde a imagem capturada será renderizada. 
+         Inicialmente invisível, será usado para processar a imagem capturada antes de exibi-la -->
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    <!-- Elemento de imagem onde a foto capturada será exibida. O atributo 'alt' é usado como descrição 
+         alternativa caso a imagem não seja carregada corretamente -->
+    <img id="photo" alt="Foto capturada" />
+
+    <!-- O script externo 'index.js' contém o código JavaScript que gerencia a captura e download da imagem.
+         Ele manipula o vídeo da câmera, desenha a imagem no canvas, e permite o download da imagem capturada -->
     <script src="index.js"></script>
 </body>
+
 </html>
