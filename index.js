@@ -18,6 +18,9 @@ captureBtn.addEventListener('click', () => {
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
 
+    // Desenhar o vídeo no canvas (capturar imagem)
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
 
 
 });
