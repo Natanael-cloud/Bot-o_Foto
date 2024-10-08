@@ -21,6 +21,9 @@ captureBtn.addEventListener('click', () => {
     // Desenhar o vídeo no canvas (capturar imagem)
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
+    // Converter para URL de imagem
+    const imageUrl = canvas.toDataURL('image/png');
+
 
 
 });
