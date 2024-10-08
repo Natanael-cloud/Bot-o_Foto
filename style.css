@@ -1,0 +1,73 @@
+body {
+    /* Define a fonte padrão da página e aplica um fundo claro */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza todo o conteúdo da página */
+    padding: 50px; /* Espaçamento interno em torno do conteúdo */
+    margin: 0; /* Remove margens padrão */
+}
+
+h1 {
+    /* Estiliza o título principal */
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    color: #4CAF50; /* Aplica cor verde ao texto */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4CAF50; /* Cor de fundo verde do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 15px 30px; /* Define o espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse vira uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo ao passar o mouse */
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+button:hover {
+    /* Muda a cor de fundo do botão ao passar o mouse */
+    background-color: #45a049; /* Um tom mais escuro de verde */
+}
+
+/* Estilo para vídeo, canvas e imagem capturada */
+video, canvas, img {
+    display: block; /* Garante que os elementos sejam exibidos como blocos */
+    margin: 20px auto; /* Espaçamento e centralização dos elementos */
+    max-width: 100%; /* Limita a largura ao máximo de 100% do contêiner */
+    border: 5px solid #ddd; /* Borda cinza suave ao redor dos elementos */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor dos elementos */
+}
+
+/* Esconder o canvas inicialmente */
+canvas {
+    display: none; /* Canvas será invisível até ser usado */
+}
+
+/* Estilo para a imagem capturada */
+#photo {
+    width: 640px; /* Define a largura da imagem capturada */
+    height: auto; /* Mantém a proporção da altura */
+    display: none; /* A imagem só será exibida após a captura */
+    border: 5px solid #4CAF50; /* Borda verde ao redor da imagem */
+}
+
+/* Estilos responsivos para dispositivos com largura menor que 700px */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho do título para dispositivos menores */
+    }
+
+    button {
+        padding: 12px 25px; /* Ajusta o espaçamento interno do botão */
+        font-size: 1rem; /* Diminui o tamanho da fonte do botão */
+    }
+
+    video, img {
+        width: 90%; /* Reduz a largura dos elementos de vídeo e imagem para 90% da tela */
+    }
+}
