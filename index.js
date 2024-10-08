@@ -34,3 +34,13 @@ captureBtn.addEventListener('click', () => {
 
 
 });
+
+// Função para baixar a imagem
+function downloadImage(imageUrl) {
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    link.download = 'captura.png'; // Nome do arquivo baixado
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
